@@ -1,0 +1,65 @@
+body {
+  background: white;
+  color: #000;
+}
+
+button, #reload {
+  background: darkorange;
+  color: white;
+  transition: linear background .3s;
+  transition: linear opacity .3s;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: .5;
+}
+
+button:not(button:disabled):active, #reload:active {
+  background-color: orange;
+}
+
+#captcha, #reload {
+  user-select: none;
+}
+
+#captcha {
+  background: none;
+  margin-right: 5px;
+  border: none;
+  width: 70px;
+  text-align: center;
+}
+
+
+#reload {
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+#verificar {
+  width: 100px;
+}
+
+#test {
+  display: inline-block;
+  position: relative;
+  border: solid 3px rgb(0, 0, 0, 0);
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  text-align: center;
+  font-weight: bold;
+}
